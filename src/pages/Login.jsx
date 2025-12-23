@@ -14,8 +14,8 @@ export default function Login(){
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             </p>
             </div>
-            <StyledInput placeholder="Enter email address" label='Email Address' labStyle={{width:'35%'}} />
-            <StyledInput placeholder="Enter password" label='Password' type="password" labStyle={{width:'35%'}} />
+            <StyledInput placeholder="Enter email address" label='Email Address' labStyle={{width:'30%'}} />
+            <StyledInput placeholder="Enter password" label='Password' type="password" labStyle={{width:'30%'}} />
             <CustButton color='#CBCBCB' style={{width:'100%', margin:'1rem 0'}}>Login</CustButton>
         </div>
     )

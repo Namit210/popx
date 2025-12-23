@@ -1,4 +1,4 @@
-export default function StyledInput({placeholder, style, type, label, labStyle}) {
+export default function StyledInput({placeholder, style, type, label, labStyle, req, asterisk}) {
 
     const containerStyle = {
         position: 'relative',
@@ -32,11 +32,13 @@ export default function StyledInput({placeholder, style, type, label, labStyle})
 
   return (
     <div style={containerStyle}>
-      {label && <label style={labelStyle}>{label}</label>}
+      {label && <label style={labelStyle}>{label}{asterisk
+       && <span style={{ color: 'red' }}>*</span>}</label>}
       <input 
         type={type || 'text'}
         placeholder={placeholder || ''}
         style={inputStyle}
+        required={req || false}
       />
     </div>
   )
