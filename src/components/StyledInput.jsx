@@ -1,4 +1,4 @@
-export default function StyledInput({placeholder, style, type, label, labStyle, req, asterisk}) {
+export default function StyledInput({placeholder, style, type, label, labStyle, req, asterisk, value, onChange, name}) {
 
     const containerStyle = {
         position: 'relative',
@@ -39,6 +39,9 @@ export default function StyledInput({placeholder, style, type, label, labStyle, 
         placeholder={placeholder || ''}
         style={inputStyle}
         required={req || false}
+        value={value}
+        onChange={onChange}
+        name={name}
       />
     </div>
   )

@@ -1,4 +1,4 @@
-export default function CustButton({children, style,color}) {
+export default function CustButton({children, style, color, onClick}) {
 
     const buttonStyle ={
 background: color || '#6C25FF4B',
@@ -17,7 +17,7 @@ background: color || '#6C25FF4B',
 
 
   return (
-    <button style={buttonStyle}>
+    <button style={buttonStyle} onClick={onClick}>
       {children}
     </button>
   )

@@ -1,5 +1,8 @@
+import { useNavigate } from 'react-router-dom'
 import CustButton from "../components/CustButton"
+
 export default function Home() {
+  const navigate = useNavigate();
 
   return (
     <div style={{display:'flex', flexDirection:'column', justifyContent:'flex-end', height:'100%'}}>
@@ -11,8 +14,8 @@ export default function Home() {
       ipsum dolor sit amet, consectetur adipiscing elit,
       </p>
       </div>
-      <CustButton style={{width:'100%'}} color='#6C25FF'>Create Account</CustButton>
-      <CustButton style={{width:'100%'}}>Already Registered? Login</CustButton>
+      <CustButton style={{width:'100%'}} color='#6C25FF' onClick={() => navigate('/create')}>Create Account</CustButton>
+      <CustButton style={{width:'100%'}} onClick={() => navigate('/login')}>Already Registered? Login</CustButton>
       </div>
       </div>
   )
