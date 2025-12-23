@@ -35,8 +35,8 @@ export default function Login(){
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             </p>
             </div>
-            <StyledInput placeholder="Enter email address" label='Email Address' labStyle={{width:'30%'}} name="email" value={formData.email} onChange={handleChange} />
-            <StyledInput placeholder="Enter password" label='Password' type="password" labStyle={{width:'30%'}} name="password" value={formData.password} onChange={handleChange} />
+            <StyledInput placeholder="Enter email address" label='Email Address' labStyle={{minWidth:'30%'}} name="email" value={formData.email} onChange={handleChange} />
+            <StyledInput placeholder="Enter password" label='Password' type="password" labStyle={{minWidth:'30%'}} name="password" value={formData.password} onChange={handleChange} />
             <CustButton color={isFormValid ? '#6C25FF' : '#CBCBCB'} style={{width:'100%', margin:'1rem 0', cursor: isFormValid ? 'pointer' : 'not-allowed'}} onClick={handleLogin}>Login</CustButton>
         </div>
     )

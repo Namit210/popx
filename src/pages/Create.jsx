@@ -53,11 +53,11 @@ export default function Create() {
                 Create your PopX account
             </div>
 
-            <StyledInput placeholder="Enter full name" label='Full Name' labStyle={{ width: '30%' }} req={true} asterisk='show' name="fullName" value={formData.fullName} onChange={handleChange} />
-            <StyledInput placeholder="Enter phone number" label='Phone number' labStyle={{ width: '30%' }} req={true} asterisk='show' name="phone" value={formData.phone} onChange={handleChange} />
-            <StyledInput placeholder="Enter email address" label='Email Address' labStyle={{ width: '30%' }} req={true} asterisk='show' name="email" value={formData.email} onChange={handleChange} />
-            <StyledInput placeholder="Enter password" label='Password' type="password" labStyle={{ width: '28%' }} req={true} asterisk='show' name="password" value={formData.password} onChange={handleChange} />
-            <StyledInput placeholder="Enter company name" label='Company name' labStyle={{ width: '32%' }} req={true} asterisk='show' name="company" value={formData.company} onChange={handleChange} />
+            <StyledInput placeholder="Enter full name" label='Full Name' labStyle={{ minWidth: '30%' }} req={true} asterisk='show' name="fullName" value={formData.fullName} onChange={handleChange} />
+            <StyledInput placeholder="Enter phone number" label='Phone number' labStyle={{ minWidth: '30%' }} req={true} asterisk='show' name="phone" value={formData.phone} onChange={handleChange} />
+            <StyledInput placeholder="Enter email address" label='Email Address' labStyle={{ minWidth: '30%' }} req={true} asterisk='show' name="email" value={formData.email} onChange={handleChange} />
+            <StyledInput placeholder="Enter password" label='Password' type="password" labStyle={{ minWidth: '28%' }} req={true} asterisk='show' name="password" value={formData.password} onChange={handleChange} />
+            <StyledInput placeholder="Enter company name" label='Company name' labStyle={{ minWidth: '32%' }} req={true} asterisk='show' name="company" value={formData.company} onChange={handleChange} />
 
             <div style={{ margin: '1rem 0', fontFamily: 'Rubik, sans-serif', fontSize: '15px' }}>
                 <span >Are you an Agency?<span style={{ color: 'red' }}>*</span></span>
